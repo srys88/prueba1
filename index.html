@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> El ciclo de la corona</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="particles-container" id="particles"></div>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">⟁</span>
+            <span class="logo-text">EL CICLO DE LA CORONA</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active">INICIO</a>
+            <a href="#personaje" class="nav-link">PERSONAJES</a>
+            <a href="#elemento" class="nav-link">ELEMENTOS</a>
+            <a href="#mundo" class="nav-link">MUNDO</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-play">JUGAR AHORA ↗</button>
+        </div>
+    </nav>
+
+    <div class="character-selector">
+        <button class="char-dot active" data-char="agua" title="Isabella - Agua">
+            <span class="dot-inner agua"></span>
+        </button>
+        <button class="char-dot" data-char="fuego" title="Majo - Fuego">
+            <span class="dot-inner fuego"></span>
+        </button>
+        <button class="char-dot" data-char="aire" title="Juanjose - Aire">
+            <span class="dot-inner aire"></span>
+        </button>
+        <button class="char-dot" data-char="tierra" title="Saray - Tierra">
+            <span class="dot-inner tierra"></span>
+        </button>
+    </div>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-bg-gradient" id="heroGradient"></div>
+        <div class="hero-content">
+            <div class="hero-subtitle reveal-up">
+                <span class="line-decoration"></span>
+                <span id="heroSubtitle">LA HEROINA DEL AGUA?</span>
+                <span class="line-decoration"></span>
+            </div>
+            <h1 class="hero-title reveal-up delay-1" id="heroTitle">Isabella</h1>
+            <p class="hero-tagline reveal-up delay-2" id="heroTagline">"Las mareas responden a mi voluntad, y el océano
+                guarda mis secretos más profundos."</p>
+            <div class="hero-ctas reveal-up delay-3">
+                <a href="#personaje" class="btn-primary">DESCUBRE SU HISTORIA →</a>
+                <a href="#elemento" class="btn-secondary">VER PODERES</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>DESPLAZA</span>
+        </div>
+        <div class="hero-portrait-wrap">
+            <div class="hero-portrait-glow" id="heroPortraitGlow"></div>
+            <img id="heroPortrait" class="hero-portrait"
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=fantasy%20water%20elemental%20female%20warrior%20queen%20with%20flowing%20blue%20hair%20made%20of%20water%20wearing%20elegant%20ocean%20armor%20with%20pearls%20and%20coral%2C%20mystical%20aqua%20magical%20powers%20glowing%20eyes%2C%20cinematic%20dramatic%20lighting%2C%20underwater%20ruins%20background%2C%20epic%20fantasy%20art%20style%2C%20ultra%20detailed&image_size=portrait_16_9"
+                alt="Kaelindra">
+        </div>
+    </section>
+
+    <div class="ornamental-divider">
+        <div class="divider-line left"></div>
+        <span class="divider-icon">◈</span>
+        <div class="divider-line right"></div>
+    </div>
+
+    <section id="personaje" class="character-section">
+        <div class="section-header reveal-up">
+            <span class="section-label">— GUARDIÁN —</span>
+            <h2 class="section-title" id="charName">Isabella</h2>
+            <div class="section-role">
+                <span class="role-icon" id="roleIcon">💧</span>
+                <span id="roleName">FUERZA DE LAS MAREAS</span>
+            </div>
+        </div>
+
+        <div class="character-main-grid">
+            <div class="character-sidebar left reveal-left">
+                <div class="quote-box">
+                    <p class="quote-mark">"</p>
+                    <p class="quote-text" id="charQuote">Las mareas responden a mi voluntad, y el océano guarda mis
+                        secretos más profundos.</p>
+                    <p class="quote-author" id="charQuoteAuthor">— Isabella</p>
+                </div>
+                <div class="stats-box">
+                    <div class="stat-row">
+                        <span class="stat-label">DIFICULTAD</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill agua" style="width:70%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">PODER</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill agua" style="width:90%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">MAGIA</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill agua" style="width:95%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">RESISTENCIA</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill agua" style="width:60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-center reveal-up">
+                <div class="character-portrait-frame">
+                    <div class="frame-corner tl"></div>
+                    <div class="frame-corner tr"></div>
+                    <div class="frame-corner bl"></div>
+                    <div class="frame-corner br"></div>
+                    <div class="portrait-ring">
+                        <div class="ring-rotate"></div>
+                    </div>
+                    <img id="charPortrait" class="character-portrait-img"
+                        src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=fantasy%20water%20elemental%20female%20warrior%20queen%20with%20flowing%20blue%20hair%20made%20of%20water%20wearing%20elegant%20ocean%20armor%20with%20pearls%20and%20coral%2C%20mystical%20aqua%20magical%20powers%20glowing%20eyes%2C%20cinematic%20dramatic%20lighting%2C%20underwater%20ruins%20background%2C%20epic%20fantasy%20art%20style%2C%20ultra%20detailed&image_size=square_hd"
+                        alt="Kaelindra">
+                </div>
+            </div>
+
+            <div class="character-sidebar right reveal-right">
+                <div class="lore-box">
+                    <span class="lore-drop-cap" id="loreDropCap">E</span>
+                    <p class="lore-text" id="loreText"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Ratione nihil, quisquam deleniti eos omnis eligendi quibusdam saepe vitae nesciunt magni
+                        exercitationem quos corrupti illum debitis quaerat beatae? Optio, beatae perferendis!
+                    </p>
+                </div>
+                <button class="btn-lore">LEER BIOGRAFÍA COMPLETA →</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="elemento" class="element-section">
+        <div class="section-header reveal-up">
+            <span class="section-label">— ELEMENTO —</span>
+            <h2 class="section-title" id="elementName">AGUA</h2>
+        </div>
+
+        <div class="element-content">
+            <div class="element-visual reveal-left">
+                <div class="element-orb-wrap">
+                    <div class="element-orb-bg" id="elementOrbBg"></div>
+                    <div class="element-orb" id="elementOrb">
+                        <div class="orb-inner"></div>
+                        <div class="orb-rings">
+                            <div class="orb-ring r1"></div>
+                            <div class="orb-ring r2"></div>
+                            <div class="orb-ring r3"></div>
+                        </div>
+                        <span class="element-symbol" id="elementSymbol">💧</span>
+                    </div>
+                    <div class="orb-particles" id="orbParticles"></div>
+                </div>
+            </div>
+
+            <div class="element-info reveal-right">
+                <h3 class="element-subtitle" id="elementSubtitle">poderes de agua?/h3>
+                    <p class="element-description" id="elementDescription">lorem40</p>
+
+                    <div class="element-abilities">
+                        <div class="ability-card reveal-up">
+                            <div class="ability-icon agua">🌊</div>
+                            <div class="ability-info">
+                                <h4>PODER?</h4>
+                                <p>lorem10</p>
+                            </div>
+                        </div>
+                        <div class="ability-card reveal-up delay-1">
+                            <div class="ability-icon agua">🫧</div>
+                            <div class="ability-info">
+                                <h4>PODER?</h4>
+                                <p>lorem10</p>
+                            </div>
+                        </div>
+                        <div class="ability-card reveal-up delay-2">
+                            <div class="ability-icon agua">💧</div>
+                            <div class="ability-info">
+                                <h4>poder</h4>
+                                <p>lorem10</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="weapon-section">
+        <div class="weapon-bubble-wrap reveal-up">
+            <div class="bubble-tail"></div>
+            <div class="weapon-bubble" id="weaponBubble">
+                <div class="weapon-glow" id="weaponGlow"></div>
+                <div class="weapon-inner">
+                    <div class="weapon-icon-wrap">
+                        <span class="weapon-icon" id="weaponIcon">🔱</span>
+                    </div>
+                    <div class="weapon-details">
+                        <span class="weapon-label">ARMA LEGENDARIA</span>
+                        <h3 class="weapon-name" id="weaponName">lorem2</h3>
+                        <p class="weapon-desc" id="weaponDesc">lorem20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore-section">
+            <div class="explore-label">
+                <span class="line-decoration"></span>
+                EXPLORAR MÁS PERSONAJES
+                <span class="line-decoration"></span>
+            </div>
+            <div class="explore-grid" id="exploreGrid"></div>
+        </div>
+    </section>
+
+    <section id="mundo" class="world-section">
+        <div class="world-bg-overlay"></div>
+        <div class="section-header reveal-up">
+            <span class="section-label">— REINO —</span>
+            <h2 class="section-title" id="worldName">DE AGUA</h2>
+            <p class="section-subtitle" id="worldSubtitle">EL REINO ACUATICO</p>
+        </div>
+
+        <div class="world-content">
+            <div class="world-visual reveal-left">
+                <div class="world-image-frame">
+                    <img id="worldImage"
+                        src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=stunning%20underwater%20fantasy%20kingdom%20city%20of%20atlantis%20with%20crystal%20towers%20bioluminescent%20coral%2C%20schools%20of%20exotic%20fish%2C%20sea%20turtles%2C%20bubbles%2C%20sunken%20ruins%2C%20dramatic%20divine%20lighting%20rays%20through%20water%2C%20epic%20cinematic%20fantasy%20art%2C%20ultra%20detailed%204k&image_size=landscape_16_9"
+                        alt="Thalassia">
+                    <div class="world-image-overlay"></div>
+                </div>
+            </div>
+
+            <div class="world-info reveal-right">
+                <p class="world-description" id="worldDescription">lorem20</p>
+
+                <div class="world-facts">
+                    <div class="fact-card">
+                        <span class="fact-number">12,450</span>
+                        <span class="fact-label">AÑOS DE HISTORIA</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-number">lorem</span>
+                        <span class="fact-label">CIUDADES ESTATALES</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-number">3M</span>
+                        <span class="fact-label">HABITANTES</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-number">∞</span>
+                        <span class="fact-label">PROFUNDIDAD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ornamental-divider bottom">
+        <div class="divider-line left"></div>
+        <span class="divider-icon">⟁</span>
+        <div class="divider-line right"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <span class="logo-icon">⟁</span>
+                <span class="logo-text">EL CICLO DE LA CORONA</span>
+                <span class="footer-tagline">El ciclo de la corona</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 tastatas. Todos los derechos reservados. Forjado con magia ancestral.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
